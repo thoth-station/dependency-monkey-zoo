@@ -1,8 +1,10 @@
-inspection-2020-08-21
+inspection-2020-09-06
 ---------------------
 
 Inspections related to AICoE tensorflow, intel-tensorflow and upstream
 tensorflow.
+
+Based on ``inspection-2020-08-21`` but with ``batch_size`` set to 100.
 
 Inspections were directly submitted to Amun API:
 

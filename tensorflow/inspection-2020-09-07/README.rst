@@ -1,7 +1,7 @@
 inspection-2020-09-07
 ---------------------
 
-Create 20 inspections for different combinations of numpy versions in a `tensorflow==2.1.0` stack:
+Create 20 inspections for different combinations of numpy versions in a ``tensorflow==2.1.0`` stack:
 
 .. code-block:: console
 

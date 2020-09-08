@@ -4,8 +4,7 @@ inspection-2020-09-08.1
 Inspections related an issue spotted when ``TensorFlow==2.1`` is used with a
 specific versions of ``urllib3`` that fail subsequent imports of ``six``.
 
-See discussion in `notebooks/issues#70>
-<https://github.com/thoth-station/notebooks/issues/70>`__.
+See discussion in `notebooks/issues#70 <https://github.com/thoth-station/notebooks/issues/70>`__.
 
 .. code-block:: console
 

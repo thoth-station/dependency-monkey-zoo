@@ -1,0 +1,164 @@
+boots:
+- configuration: {}
+  name: UbiBoot
+- configuration: {}
+  name: PythonVersionBoot
+- configuration: {}
+  name: RHELVersionBoot
+- configuration:
+    default_platform: linux-x86_64
+  name: PlatformBoot
+- configuration: {}
+  name: FullySpecifiedEnvironment
+- configuration: {}
+  name: VersionClashBoot
+sieves:
+- configuration: {}
+  name: CutPreReleasesSieve
+- configuration: {}
+  name: Functools32BackportSieve
+- configuration: {}
+  name: Enum34BackportSieve
+- configuration: {}
+  name: MockBackportSieve
+- configuration: {}
+  name: CutLockedSieve
+- configuration: {}
+  name: Py36SetuptoolsSieve
+- configuration: {}
+  name: PackageIndexSieve
+- configuration:
+    without_error: true
+  name: SolvedSieve
+steps: []
+strides:
+- configuration:
+    only_once: false
+    package_name: absl-py
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: astor
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: gast
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: google-pasta
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: grpcio
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: h5py
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: keras-applications
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: keras-preprocessing
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: markdown
+  name: OneVersionStride
+- configuration:
+   only_once: false
+   package_name: numpy
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: opt-einsum
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: protobuf
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: setuptools
+  name: OneVersionStride
+  # - configuration:
+  #     only_once: false
+  #     package_name: six
+  #   name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: tensorboard
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: tensorflow-estimator
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: termcolor
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: werkzeug
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: wheel
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: rsa
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: pyasn1
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: pyasn1-modules
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: cachetools
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: certifi
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: chardet
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: google-auth
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: idna
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: oauthlib
+  name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: requests-oauthlib
+  name: OneVersionStride
+  # - configuration:
+  #     only_once: false
+  #     package_name: urllib3
+  #   name: OneVersionStride
+- configuration:
+    only_once: false
+    package_name: wrapt
+  name: OneVersionStride
+- name: UniqueStackStride
+wraps:
+- configuration: {}
+  name: MKLThreadsWrap
+- configuration: {}
+  name: NoObservationWrap

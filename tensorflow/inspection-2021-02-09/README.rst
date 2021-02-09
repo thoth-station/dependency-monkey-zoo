@@ -17,3 +17,7 @@ stacks for UBI 8 Python 3.8:
     --pipeline pipeline.yaml \
     --report-output dependency_monkey_report.json \
     --stack-output https://amun.stage.thoth-station.ninja/api/v1
+
+.. code-block:: console
+
+  cat dependency_monkey_report.json | jq '.result.report.responses[].response' | sed 's/"//g' > scheduled.txt

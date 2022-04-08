@@ -1,0 +1,17 @@
+boots:
+- configuration: {}
+  name: UbiBoot
+  default_platform: linux-x86_64
+sieves:
+- configuration: {}
+  name: CutLockedSieve
+- configuration: {}
+  name: PackageIndexSieve
+- configuration:
+    without_error: true
+  name: SolvedSieve
+- configuration: {}
+  name: FilterIndexSieve
+steps: []
+strides: []
+wraps: []
